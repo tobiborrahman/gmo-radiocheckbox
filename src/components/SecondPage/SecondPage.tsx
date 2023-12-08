@@ -35,7 +35,13 @@ const SecondPage: React.FC = () => {
 	];
 
 	return (
-		<div>
+		<div
+			style={{
+				padding: '100px 0',
+				background: '#E44C2A',
+				color: 'white',
+			}}
+		>
 			<div
 				style={{
 					display: 'flex',
@@ -44,12 +50,24 @@ const SecondPage: React.FC = () => {
 				}}
 			>
 				<div style={{ height: 400, width: '80%', textAlign: 'center' }}>
-					<h1>Data Grid Example</h1>
+					<h1
+						style={{
+							fontSize: '35px',
+							fontWeight: 'bold',
+							padding: '20px 0',
+						}}
+					>
+						Data Grid Example
+					</h1>
 
-					<DataGrid rows={posts} columns={columns} />
+					<DataGrid
+						style={{ color: 'white' }}
+						rows={posts}
+						columns={columns}
+					/>
 				</div>
 			</div>
-			<div style={{ margin: '100px 0px' }}>
+			<div style={{ margin: '200px 0px' }}>
 				<DepartmentList />
 			</div>
 		</div>
